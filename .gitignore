@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+*/node_modules
+*/.vscode
+/.vscode
+
+#db_data
+*/pgdata
+/pgdata
+
+# local env files
+.env*.local
+.env

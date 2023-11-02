@@ -1,0 +1,21 @@
+{
+  "name": "01_auth_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "(for /F \"tokens=*\" %i in (.env) do set %i) && node server.js",
+    "dev": "(for /F \"tokens=*\" %i in (.env) do set %i) && nodemon --inspect server.js",
+    "start:win": "(for /F \"tokens=*\" %i in (.env) do set %i) && nodemon server.js",
+    "start:lin": "export $(cat .env | xargs) && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  }
+}
