@@ -12,7 +12,7 @@ const SERVER_PORT = PORT || 8081;
   await db.createTable();
 })();
 
-app.listen(PORT, () => {
+app.listen(SERVER_PORT, () => {
   console.log(
     '\x1b[33m',
     `Server running. Use our API on port: ${SERVER_PORT}\n`,
