@@ -1,11 +1,11 @@
-# 01: Auth API 🖥️ ⚓
+# 02: Find user country by IP 🖥️ ⚓
 
 # Use API 💾 🌐
 
 Run it:
 
 ```run
-env $(cat .env | xargs) node server.js
+node server.js
 ```
 
 So, in total, API should:
